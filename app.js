@@ -1,3 +1,4 @@
+//Lista para almacenar los nombres ingresados
 let amigos = [];
 
 function agregarAmigo() {
@@ -6,7 +7,7 @@ function agregarAmigo() {
   
   // Validar la entrada
   if (nombreAmigo.trim() === "") {
-    alert("Por favor, inserte un nombre.");
+    alert("Por favor, escriba un nombre.");
     return;
   }
   
@@ -44,4 +45,5 @@ function sortearAmigo() {
   
   const resultado = document.getElementById('resultado');
   resultado.innerHTML = `<li>El Amigo Secreto sorteado es: ${amigoSorteado}</li>`;
+  amigos = []
 }
